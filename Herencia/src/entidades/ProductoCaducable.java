@@ -11,7 +11,8 @@ public class ProductoCaducable extends Producto {
 	}
 
 	public ProductoCaducable(int codigo, String nombre, double precio, Date fecha) {
-		super(codigo, nombre, precio);//llamada al constructor del padre en este caso a Producto
+		super(codigo, nombre, precio);// llamada al constructor del padre en
+										// este caso a Producto
 		setFechaCaducidad(fecha);
 	}
 
@@ -21,6 +22,13 @@ public class ProductoCaducable extends Producto {
 
 	public void setFechaCaducidad(Date fechaCaducidad) {
 		this.fechaCaducidad = fechaCaducidad;
+	}
+
+	@Override
+	public String toString() {
+		return "ProductoCaducable ["+
+				 super.toString()+ 
+				"Fecha de caducidad: " +this.getFechaCaducidad() + "]";
 	}
 
 }
