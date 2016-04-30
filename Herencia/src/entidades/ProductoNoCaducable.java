@@ -1,5 +1,5 @@
 package entidades;
 
-public class ProductoNoCaducable {
+public class ProductoNoCaducable extends Producto{
 
 }
