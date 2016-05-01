@@ -22,5 +22,8 @@ public class App {
 //		El comando instanceof permite saber si un objeto es un IS-A de una clase
 		if(pc instanceof ProductoCaducable)
 			System.out.println("Es un producto de caducable.");
+		
+//		No tiene mucho sentido añadir un Producto, lo evito haciendo la clase abstracta
+//		Producto p1 = new Producto(3, "Producto3", 3.00); 
 	}
 }
