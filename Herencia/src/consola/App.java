@@ -14,5 +14,9 @@ public class App {
 		//casting o moldeo
 		Producto p = pc; 
 		System.out.println("p\n"+p);
+		
+//		El comando instanceof permite saber si un objeto es un IS-A de una clase
+		if(pc instanceof ProductoCaducable)
+			System.out.println("Es un producto de caducable.");
 	}
 }
